@@ -6,5 +6,5 @@ select
     amount/1000 as amount,
     created as created_at
 
-from dbt-tutorial.stripe.payment
+from {{source ('stripe', 'payment') }}
 
